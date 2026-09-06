@@ -1,0 +1,43 @@
+name: sync-goat-models
+
+on:
+  schedule:
+    # 21:17 UTC = 05:17 +08:00 daily
+    - cron: "17 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-goat-models
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Parse GOAT plan models
+        run: python3 sync_goat_models.py --output goat-models.json
+
+      # Exit code 2 = validation warning (unresolved slugs / odd count).
+      # The JSON is still committed so the change is visible, but the run
+      # shows red and the server-side applier skips partial lists.
+      - name: Commit result
+        if: always() && hashFiles('goat-models.json') != ''
+        run: |
+          git config user.name "goat-sync-bot"
+          git config user.email "goat-sync-bot@users.noreply.github.com"
+          if git diff --quiet -- goat-models.json; then
+            echo "No model changes"
+          else
+            git add goat-models.json
+            git commit -m "goat plan models: $(date -u +%F) ($(python3 -c "import json;print(len(json.load(open('goat-models.json'))['models']))") models)"
+            git push
+          fi
