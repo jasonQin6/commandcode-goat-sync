@@ -3,8 +3,8 @@
   "plan": "individual-goat",
   "source": "https://commandcode.ai/docs/plans/goat",
   "upstream_models_api": "https://api.commandcode.ai/provider/v1/models",
-  "fetched_at_utc": "2026-09-08T23:25:02+00:00",
-  "slug_count": 48,
+  "fetched_at_utc": "2026-09-09T23:17:58+00:00",
+  "slug_count": 49,
   "models": [
     "MiniMaxAI/MiniMax-M2.5",
     "MiniMaxAI/MiniMax-M2.7",
@@ -26,6 +26,7 @@
     "google/gemini-3.8-flash",
     "gpt-5.6-luna",
     "gpt-5.6-sol",
+    "inclusionai/ling-3.0-flash-sante:free",
     "meituan/LongCat-2.0:free",
     "meta/muse-spark-1.2",
     "meta/muse-spark-1.2-contributor",
