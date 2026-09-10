@@ -3,8 +3,8 @@
   "plan": "individual-goat",
   "source": "https://commandcode.ai/docs/plans/goat",
   "upstream_models_api": "https://api.commandcode.ai/provider/v1/models",
-  "fetched_at_utc": "2026-09-09T23:17:58+00:00",
-  "slug_count": 49,
+  "fetched_at_utc": "2026-09-10T23:12:21+00:00",
+  "slug_count": 50,
   "models": [
     "MiniMaxAI/MiniMax-M2.5",
     "MiniMaxAI/MiniMax-M2.7",
@@ -22,6 +22,7 @@
     "deepseek/deepseek-v4-flash-fast",
     "deepseek/deepseek-v4-flash-vision-exp",
     "deepseek/deepseek-v4-pro",
+    "deepseek/deepseek-v4.1-flash",
     "google/gemini-3.7-flash",
     "google/gemini-3.8-flash",
     "gpt-5.6-luna",
