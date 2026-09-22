@@ -3,8 +3,8 @@
   "plan": "individual-goat",
   "source": "https://commandcode.ai/docs/plans/goat",
   "upstream_models_api": "https://api.commandcode.ai/provider/v1/models",
-  "fetched_at_utc": "2026-09-22T00:08:50+00:00",
-  "slug_count": 57,
+  "fetched_at_utc": "2026-09-22T23:36:35+00:00",
+  "slug_count": 59,
   "models": [
     "MiniMaxAI/MiniMax-M2.5",
     "MiniMaxAI/MiniMax-M2.7",
@@ -28,6 +28,7 @@
     "google/gemini-3.8-flash",
     "gpt-5.6-luna",
     "gpt-5.6-sol",
+    "gpt-6-luna",
     "inclusionai/ling-3.0-flash-sante:free",
     "meituan/LongCat-2.0",
     "meta/muse-spark-1.2",
@@ -64,6 +65,13 @@
     "zai-org/GLM-5.2-Fast",
     "zai-org/GLM-5.3"
   ],
-  "unresolved": [],
-  "warnings": []
+  "unresolved": [
+    {
+      "slug": "jev",
+      "reason": "no-match"
+    }
+  ],
+  "warnings": [
+    "1 slug(s) could not be resolved to model IDs"
+  ]
 }
