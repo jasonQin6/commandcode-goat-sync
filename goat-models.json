@@ -3,8 +3,8 @@
   "plan": "individual-goat",
   "source": "https://commandcode.ai/docs/plans/goat",
   "upstream_models_api": "https://api.commandcode.ai/provider/v1/models",
-  "fetched_at_utc": "2026-09-22T23:36:35+00:00",
-  "slug_count": 59,
+  "fetched_at_utc": "2026-09-23T23:43:58+00:00",
+  "slug_count": 60,
   "models": [
     "MiniMaxAI/MiniMax-M2.5",
     "MiniMaxAI/MiniMax-M2.7",
@@ -42,6 +42,7 @@
     "moonshotai/Kimi-K3",
     "nvidia/nemotron-3-ultra-550b-a55b",
     "poolside/laguna-s-2.1-free",
+    "stealth/space-bunny-alpha",
     "stepfun/Step-3.5-Flash",
     "stepfun/Step-3.7-Flash",
     "stepfun/Step-5-Preview",
