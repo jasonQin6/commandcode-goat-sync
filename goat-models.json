@@ -3,7 +3,7 @@
   "plan": "individual-goat",
   "source": "https://commandcode.ai/docs/plans/goat",
   "upstream_models_api": "https://api.commandcode.ai/provider/v1/models",
-  "fetched_at_utc": "2026-09-26T23:38:29+00:00",
+  "fetched_at_utc": "2026-09-27T23:49:28+00:00",
   "slug_count": 61,
   "models": [
     "MiniMaxAI/MiniMax-M2.5",
